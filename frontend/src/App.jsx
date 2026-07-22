@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function App() {
   const [name, setName] = useState("");
+  const API = import.meta.env.VITE_API_URL;
   const getData = async () => {
     try {
       debugger;
