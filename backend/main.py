@@ -3,7 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = ["http://localhost:5173"]
+origins = [
+    "http://localhost:5173",
+    "https://hello-apps.vercel.app",
+]
 
 app.add_middleware(
     CORSMiddleware,
